@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ReversalView">
+            <connections>
+                <outlet property="backView" destination="Jjj-qB-oNs" id="Sgn-gY-szd"/>
+                <outlet property="frontView" destination="Avz-U0-icv" id="VLo-qp-OqV"/>
+                <outlet property="innerView" destination="iN0-l3-epB" id="dg6-cU-1Nx"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="226" height="216"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jjj-qB-oNs">
+                    <rect key="frame" x="0.0" y="0.0" width="226" height="216"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="biaoqian_kjdz02" translatesAutoresizingMaskIntoConstraints="NO" id="HO6-re-bI3">
+                            <rect key="frame" x="0.0" y="0.0" width="226" height="216"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="HO6-re-bI3" secondAttribute="trailing" id="L7f-Qt-Wwq"/>
+                        <constraint firstAttribute="bottom" secondItem="HO6-re-bI3" secondAttribute="bottom" id="Odj-bX-cnd"/>
+                        <constraint firstItem="HO6-re-bI3" firstAttribute="leading" secondItem="Jjj-qB-oNs" secondAttribute="leading" id="jnC-l3-tPm"/>
+                        <constraint firstItem="HO6-re-bI3" firstAttribute="top" secondItem="Jjj-qB-oNs" secondAttribute="top" id="rIk-62-Buc"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Avz-U0-icv">
+                    <rect key="frame" x="0.0" y="0.0" width="226" height="216"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="biaoqian_hkg01" translatesAutoresizingMaskIntoConstraints="NO" id="MTz-RA-Gba">
+                            <rect key="frame" x="0.0" y="0.0" width="226" height="216"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="MTz-RA-Gba" firstAttribute="top" secondItem="Avz-U0-icv" secondAttribute="top" id="3CY-iU-2Xc"/>
+                        <constraint firstAttribute="trailing" secondItem="MTz-RA-Gba" secondAttribute="trailing" id="IZx-Cu-h6O"/>
+                        <constraint firstAttribute="bottom" secondItem="MTz-RA-Gba" secondAttribute="bottom" id="hWv-6g-biX"/>
+                        <constraint firstItem="MTz-RA-Gba" firstAttribute="leading" secondItem="Avz-U0-icv" secondAttribute="leading" id="jhd-pl-Ax8"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Jjj-qB-oNs" secondAttribute="bottom" id="BNV-Sd-E9c"/>
+                <constraint firstItem="Jjj-qB-oNs" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="NsP-3g-HBu"/>
+                <constraint firstItem="Jjj-qB-oNs" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="jRI-82-w2W"/>
+                <constraint firstItem="Avz-U0-icv" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="mBF-UZ-aiR"/>
+                <constraint firstAttribute="trailing" secondItem="Jjj-qB-oNs" secondAttribute="trailing" id="tsU-pL-X4Q"/>
+                <constraint firstAttribute="trailing" secondItem="Avz-U0-icv" secondAttribute="trailing" id="wcV-92-axr"/>
+                <constraint firstAttribute="bottom" secondItem="Avz-U0-icv" secondAttribute="bottom" id="yct-Gc-ZWi"/>
+                <constraint firstItem="Avz-U0-icv" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ytf-xF-vgP"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="biaoqian_hkg01" width="226" height="215"/>
+        <image name="biaoqian_kjdz02" width="226" height="216"/>
+    </resources>
+</document>

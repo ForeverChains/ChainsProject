@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BlurViewController">
+            <connections>
+                <outlet property="blurImageView" destination="ROo-TV-duK" id="bbU-RQ-KCg"/>
+                <outlet property="effectView" destination="aga-ri-7l4" id="8ZL-P5-bb3"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2" translatesAutoresizingMaskIntoConstraints="NO" id="ROo-TV-duK">
+                    <rect key="frame" x="10" y="245.5" width="355" height="177.5"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="ROo-TV-duK" secondAttribute="height" multiplier="2:1" id="MOE-yE-gOh"/>
+                    </constraints>
+                </imageView>
+                <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aga-ri-7l4">
+                    <rect key="frame" x="10" y="245" width="100" height="178"/>
+                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="kkU-lc-Ukd">
+                        <rect key="frame" x="0.0" y="0.0" width="100" height="178"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vibrant!!!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jp0-9a-r0P">
+                                <rect key="frame" x="15" y="79" width="70" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="jp0-9a-r0P" firstAttribute="centerY" secondItem="kkU-lc-Ukd" secondAttribute="centerY" id="Fh1-VT-ZXI"/>
+                            <constraint firstItem="jp0-9a-r0P" firstAttribute="centerX" secondItem="kkU-lc-Ukd" secondAttribute="centerX" id="W5m-6C-ItF"/>
+                        </constraints>
+                    </view>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="0YF-UJ-wO6"/>
+                    </constraints>
+                    <blurEffect style="light"/>
+                </visualEffectView>
+                <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nlX-3I-P9f">
+                    <rect key="frame" x="265" y="245.5" width="100" height="177.5"/>
+                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="aOx-R9-XbF">
+                        <rect key="frame" x="0.0" y="0.0" width="100" height="177.5"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ugd-Vm-B6f">
+                                <rect key="frame" x="0.0" y="0.0" width="100" height="177.5"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="eYS-ES-YUz">
+                                    <rect key="frame" x="0.0" y="0.0" width="100" height="177.5"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vibrant!!!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C0R-Ge-uud">
+                                            <rect key="frame" x="15" y="78.5" width="70" height="20.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="C0R-Ge-uud" firstAttribute="centerX" secondItem="eYS-ES-YUz" secondAttribute="centerX" id="ZQW-Mr-SRb"/>
+                                        <constraint firstItem="C0R-Ge-uud" firstAttribute="centerY" secondItem="eYS-ES-YUz" secondAttribute="centerY" id="v94-sP-HeX"/>
+                                    </constraints>
+                                </view>
+                                <vibrancyEffect>
+                                    <blurEffect style="light"/>
+                                </vibrancyEffect>
+                            </visualEffectView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="Ugd-Vm-B6f" firstAttribute="top" secondItem="aOx-R9-XbF" secondAttribute="top" id="0dH-qj-yXY"/>
+                            <constraint firstAttribute="bottom" secondItem="Ugd-Vm-B6f" secondAttribute="bottom" id="Kgw-vD-z0i"/>
+                            <constraint firstAttribute="trailing" secondItem="Ugd-Vm-B6f" secondAttribute="trailing" id="OEm-Eq-udi"/>
+                            <constraint firstItem="Ugd-Vm-B6f" firstAttribute="leading" secondItem="aOx-R9-XbF" secondAttribute="leading" id="h3Q-v8-w8C"/>
+                        </constraints>
+                    </view>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="V7q-aK-olT"/>
+                    </constraints>
+                    <blurEffect style="light"/>
+                </visualEffectView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="nlX-3I-P9f" firstAttribute="trailing" secondItem="ROo-TV-duK" secondAttribute="trailing" id="27f-YV-zKq"/>
+                <constraint firstItem="nlX-3I-P9f" firstAttribute="top" secondItem="ROo-TV-duK" secondAttribute="top" id="8uq-jT-leX"/>
+                <constraint firstAttribute="trailing" secondItem="ROo-TV-duK" secondAttribute="trailing" constant="10" id="BgD-zI-aJ2"/>
+                <constraint firstItem="ROo-TV-duK" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="Fqi-IH-Avl"/>
+                <constraint firstItem="nlX-3I-P9f" firstAttribute="bottom" secondItem="ROo-TV-duK" secondAttribute="bottom" id="Yc5-Rj-GoN"/>
+                <constraint firstItem="ROo-TV-duK" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="Z8j-qB-DLf"/>
+                <constraint firstItem="aga-ri-7l4" firstAttribute="top" secondItem="ROo-TV-duK" secondAttribute="top" id="fbT-xd-SKb"/>
+                <constraint firstItem="aga-ri-7l4" firstAttribute="leading" secondItem="ROo-TV-duK" secondAttribute="leading" id="izZ-uj-SWg"/>
+                <constraint firstItem="aga-ri-7l4" firstAttribute="bottom" secondItem="ROo-TV-duK" secondAttribute="bottom" id="xhm-Ca-cnM"/>
+            </constraints>
+            <point key="canvasLocation" x="31.5" y="59.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="2" width="320" height="160"/>
+    </resources>
+</document>

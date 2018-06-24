@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PageCollectionViewController">
+            <connections>
+                <outlet property="collectionView" destination="NgE-u9-pvp" id="tJ0-AK-zH2"/>
+                <outlet property="pageControl" destination="A7X-jP-cOv" id="HBw-Xr-PYX"/>
+                <outlet property="pageLab" destination="fbi-rO-cty" id="uGj-bc-h9W"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="JPH-PQ-abO">
+                    <rect key="frame" x="0.0" y="-1" width="375" height="667"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NgE-u9-pvp" customClass="PagedCollectionView">
+                    <rect key="frame" x="37" y="243" width="300" height="180"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="180" id="RrN-rc-dTi"/>
+                        <constraint firstAttribute="width" constant="300" id="vd4-08-F2E"/>
+                    </constraints>
+                </view>
+                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="A7X-jP-cOv">
+                    <rect key="frame" x="168" y="443" width="39" height="37"/>
+                </pageControl>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fbi-rO-cty">
+                    <rect key="frame" x="166.5" y="500.5" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="A7X-jP-cOv" firstAttribute="top" secondItem="NgE-u9-pvp" secondAttribute="bottom" constant="20" id="81k-IN-vlO"/>
+                <constraint firstItem="JPH-PQ-abO" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="AqA-CP-3eW"/>
+                <constraint firstAttribute="trailing" secondItem="JPH-PQ-abO" secondAttribute="trailing" id="F1W-UT-P9m"/>
+                <constraint firstItem="JPH-PQ-abO" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="cqf-Ht-JSV"/>
+                <constraint firstItem="fbi-rO-cty" firstAttribute="top" secondItem="A7X-jP-cOv" secondAttribute="bottom" constant="20" id="fhY-JE-j5C"/>
+                <constraint firstItem="NgE-u9-pvp" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="gkH-Js-JSY"/>
+                <constraint firstItem="NgE-u9-pvp" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="ldh-gl-g3m"/>
+                <constraint firstItem="fbi-rO-cty" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="mhM-32-hfH"/>
+                <constraint firstAttribute="bottom" secondItem="JPH-PQ-abO" secondAttribute="bottom" id="mrJ-Rd-oW3"/>
+                <constraint firstItem="A7X-jP-cOv" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="n5O-IL-54V"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="1" width="1000" height="700"/>
+    </resources>
+</document>

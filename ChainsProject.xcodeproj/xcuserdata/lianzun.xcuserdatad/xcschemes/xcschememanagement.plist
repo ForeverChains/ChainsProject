@@ -4,10 +4,28 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>ChainsProject.xcscheme</key>
+		<key>MusicMan.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>14</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>76F252E020A548B50086586C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>76F252F820A548B50086586C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>76F2530320A548B50086586C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

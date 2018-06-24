@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AnimationViewController">
+            <connections>
+                <outlet property="animationView" destination="s6j-1S-pBQ" id="WId-w4-v6p"/>
+                <outlet property="label" destination="9Pb-Fm-s0w" id="XCS-AK-FBZ"/>
+                <outlet property="reversalView" destination="AdA-xl-nVb" id="XNI-aN-BDA"/>
+                <outlet property="rippleView" destination="huo-uv-1f7" id="6mZ-kx-Cd2"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="huo-uv-1f7" customClass="CircleRippleView">
+                    <rect key="frame" x="10" y="10" width="66" height="66"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="66" id="ZjD-h2-s9S"/>
+                        <constraint firstAttribute="height" constant="66" id="kNo-4S-IJX"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Pb-Fm-s0w" customClass="UICountingLabel">
+                    <rect key="frame" x="106" y="32.5" width="11" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AdA-xl-nVb" customClass="ReversalView">
+                    <rect key="frame" x="74.5" y="325.5" width="226" height="216"/>
+                    <color key="backgroundColor" red="0.91372549020000005" green="0.33333333329999998" blue="0.31764705879999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="226" id="LIV-Q1-1ik"/>
+                        <constraint firstAttribute="height" constant="216" id="yyA-u7-Xv4"/>
+                    </constraints>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2" translatesAutoresizingMaskIntoConstraints="NO" id="s6j-1S-pBQ">
+                    <rect key="frame" x="27.5" y="155.5" width="320" height="160"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="AdA-xl-nVb" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="100" id="0GB-fj-PgE"/>
+                <constraint firstItem="AdA-xl-nVb" firstAttribute="top" secondItem="s6j-1S-pBQ" secondAttribute="bottom" constant="10" id="0YX-yF-ZEN"/>
+                <constraint firstItem="AdA-xl-nVb" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="4hG-mg-VeK"/>
+                <constraint firstItem="9Pb-Fm-s0w" firstAttribute="centerY" secondItem="huo-uv-1f7" secondAttribute="centerY" id="82K-mn-oUX"/>
+                <constraint firstItem="9Pb-Fm-s0w" firstAttribute="leading" secondItem="huo-uv-1f7" secondAttribute="trailing" constant="30" id="BCl-Yc-a0Z"/>
+                <constraint firstItem="huo-uv-1f7" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="FXt-Kd-vJg"/>
+                <constraint firstItem="s6j-1S-pBQ" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="G4F-o8-FWv"/>
+                <constraint firstItem="huo-uv-1f7" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="10" id="XxR-4q-TMf"/>
+            </constraints>
+            <point key="canvasLocation" x="34.5" y="54.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="2" width="320" height="160"/>
+    </resources>
+</document>

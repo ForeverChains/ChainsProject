@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BlurTestViewController">
+            <connections>
+                <outlet property="leftButton" destination="CI9-jj-Rec" id="HbQ-lA-GJZ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="visualView" destination="dSJ-IX-Qj6" id="0ic-gP-KU7"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="fap-eQ-ZfD">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CI9-jj-Rec">
+                    <rect key="frame" x="0.0" y="0.0" width="44" height="60"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="44" id="djJ-PE-zGE"/>
+                        <constraint firstAttribute="height" constant="60" id="sLT-a5-D93"/>
+                    </constraints>
+                    <connections>
+                        <action selector="leftButtonClick:" destination="-1" eventType="touchUpInside" id="4IK-xc-JAo"/>
+                    </connections>
+                </button>
+                <visualEffectView opaque="NO" alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dSJ-IX-Qj6">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="5EB-7z-DdK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    </view>
+                    <blurEffect style="light"/>
+                </visualEffectView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fap-eQ-ZfD" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="AyH-lK-436"/>
+                <constraint firstItem="CI9-jj-Rec" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="CPx-x4-svs"/>
+                <constraint firstItem="CI9-jj-Rec" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="S6C-mF-oWH"/>
+                <constraint firstAttribute="bottom" secondItem="fap-eQ-ZfD" secondAttribute="bottom" id="XCa-8a-zqm"/>
+                <constraint firstAttribute="bottom" secondItem="dSJ-IX-Qj6" secondAttribute="bottom" id="Xoa-Gf-Jkf"/>
+                <constraint firstItem="fap-eQ-ZfD" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="hlW-wy-byz"/>
+                <constraint firstAttribute="trailing" secondItem="dSJ-IX-Qj6" secondAttribute="trailing" id="l8D-MY-pai"/>
+                <constraint firstAttribute="trailing" secondItem="fap-eQ-ZfD" secondAttribute="trailing" id="oV4-BS-NFs"/>
+                <constraint firstItem="dSJ-IX-Qj6" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="pld-0S-jbp"/>
+                <constraint firstItem="dSJ-IX-Qj6" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="tr7-oI-MV8"/>
+            </constraints>
+            <point key="canvasLocation" x="36" y="70"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="1" width="1000" height="700"/>
+    </resources>
+</document>

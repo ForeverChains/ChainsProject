@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SketchViewController">
+            <connections>
+                <outlet property="sketch" destination="4VS-Yg-2jZ" id="HLN-Pl-LU3"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6KI-G1-rBS">
+                    <rect key="frame" x="0.0" y="492" width="600" height="44"/>
+                    <items>
+                        <barButtonItem title="撤销" width="80" id="uPi-L9-Rse">
+                            <connections>
+                                <action selector="toolBarClick:" destination="-1" id="mLz-g9-y8i"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem tag="1" title="恢复" width="80" id="lL8-7v-lyI">
+                            <connections>
+                                <action selector="toolBarClick:" destination="-1" id="hW1-cn-J0G"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem tag="2" title="清除" width="80" id="JDv-AM-IhV">
+                            <connections>
+                                <action selector="toolBarClick:" destination="-1" id="k2e-AA-Ir5"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem tag="3" title="保存" width="80" id="FL1-Dm-51D">
+                            <connections>
+                                <action selector="toolBarClick:" destination="-1" id="sle-e5-Hyt"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem tag="4" title="橡皮擦" id="K7B-8j-y66">
+                            <connections>
+                                <action selector="toolBarClick:" destination="-1" id="mLy-Ik-Y0o"/>
+                            </connections>
+                        </barButtonItem>
+                    </items>
+                </toolbar>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4VS-Yg-2jZ" customClass="SketchView">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="492"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="4VS-Yg-2jZ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="6rb-tr-MSN"/>
+                <constraint firstItem="4VS-Yg-2jZ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Njf-lE-rcX"/>
+                <constraint firstItem="6KI-G1-rBS" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="by0-VW-FlB"/>
+                <constraint firstAttribute="trailing" secondItem="4VS-Yg-2jZ" secondAttribute="trailing" id="eFj-mw-HDD"/>
+                <constraint firstAttribute="trailing" secondItem="6KI-G1-rBS" secondAttribute="trailing" id="jEY-NS-uhU"/>
+                <constraint firstItem="6KI-G1-rBS" firstAttribute="top" secondItem="4VS-Yg-2jZ" secondAttribute="bottom" id="mCI-zf-M80"/>
+                <constraint firstAttribute="bottom" secondItem="6KI-G1-rBS" secondAttribute="bottom" id="yaU-69-RY1"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+        </view>
+    </objects>
+</document>
