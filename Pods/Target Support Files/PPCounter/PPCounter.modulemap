@@ -1,0 +1,6 @@
+framework module PPCounter {
+  umbrella header "PPCounter-umbrella.h"
+
+  export *
+  module * { export * }
+}
