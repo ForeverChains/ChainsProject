@@ -36,27 +36,35 @@
 
 @implementation UIView (CornerRadius)
 
-+ (void)chains_cutCornerWithRadius:(float)radius forViews:(NSArray *)viewArray
+- (void)chains_cutCornerWithRadius:(float)radius
 {
-    [viewArray enumerateObjectsUsingBlock:^(UIView *view, NSUInteger idx, BOOL *stop) {
-        view.clipsToBounds = YES;
-        view.layer.cornerRadius = radius;
-        /*
-         clipsToBounds
-         是指视图上的子视图,如果超出父视图的部分就截取掉
-         
-         masksToBounds
-         是指视图的图层上的子图层,如果超出父图层的部分就截取掉
-         */
-    }];
+    [self chains_cutCornerWithRadius:radius rectCorner:UIRectCornerAllCorners];
 }
 
-+ (void)chains_drawBorderWithColor:(UIColor *)color width:(float)width forViews:(NSArray *)viewArray
+/*
+ clipsToBounds
+ 是指视图上的子视图,如果超出父视图的部分就截取掉
+ 
+ masksToBounds
+ 是指视图的图层上的子图层,如果超出父图层的部分就截取掉
+ */
+
+- (void)chains_cutCornerWithRadius:(float)radius rectCorner:(UIRectCorner)corner
 {
-    [viewArray enumerateObjectsUsingBlock:^(UIView *view, NSUInteger idx, BOOL *stop) {
-        view.layer.borderColor = color.CGColor;
-        view.layer.borderWidth = width;
-    }];
+    UIBezierPath *maskPath = [UIBezierPath bezierPathWithRoundedRect:self.bounds
+                                                   byRoundingCorners:corner
+                                                         cornerRadii:CGSizeMake(radius,
+                                                                                radius)];
+    CAShapeLayer *maskLayer = [[CAShapeLayer alloc] init];
+    maskLayer.frame = self.bounds;
+    maskLayer.path = maskPath.CGPath;
+    self.layer.mask = maskLayer;
+}
+
+- (void)chains_drawBorderWithColor:(UIColor *)color width:(float)width
+{
+    self.layer.borderColor = color.CGColor;
+    self.layer.borderWidth = width;
 }
 
 + (void)chains_shadowWithColor:(UIColor *)color offset:(CGSize)offset radius:(float)radius opacity:(float)opacity forViews:(NSArray *)viewArray

@@ -46,18 +46,17 @@ typedef enum : NSUInteger {
  *  切割圆角
  *
  *  @param radius 圆角半径
- *  @param viewArray   目标视图
  */
-+ (void)chains_cutCornerWithRadius:(float)radius forViews:(NSArray *)viewArray;
+- (void)chains_cutCornerWithRadius:(float)radius;
+- (void)chains_cutCornerWithRadius:(float)radius rectCorner:(UIRectCorner)corner;
 
 /**
  *  绘制边框
  *
  *  @param color 边框颜色
  *  @param width 边框宽度
- *  @param viewArray  目标视图
  */
-+ (void)chains_drawBorderWithColor:(UIColor *)color width:(float)width forViews:(NSArray *)viewArray;
+- (void)chains_drawBorderWithColor:(UIColor *)color width:(float)width;
 
 /**
  设置阴影

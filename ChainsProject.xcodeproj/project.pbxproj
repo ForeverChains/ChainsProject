@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2C8591F670F02564D6AF8FBD /* Pods_MusicMan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC4A6C3716426CDC877DF492 /* Pods_MusicMan.framework */; };
+		762DD9042119D8C100107174 /* UIView+IBInspectable.m in Sources */ = {isa = PBXBuildFile; fileRef = 762DD9032119D8C100107174 /* UIView+IBInspectable.m */; };
 		766FB35B20C2E6E200EA4956 /* Chains_PlaceholderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 766FB35620C2E6E100EA4956 /* Chains_PlaceholderView.m */; };
 		766FB35C20C2E6E200EA4956 /* UIScrollView+Placeholder.m in Sources */ = {isa = PBXBuildFile; fileRef = 766FB35920C2E6E200EA4956 /* UIScrollView+Placeholder.m */; };
 		766FB35D20C2E6E200EA4956 /* Chains_PlaceholderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 766FB35A20C2E6E200EA4956 /* Chains_PlaceholderView.xib */; };
@@ -243,6 +244,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		762DD9022119D8C000107174 /* UIView+IBInspectable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+IBInspectable.h"; sourceTree = "<group>"; };
+		762DD9032119D8C100107174 /* UIView+IBInspectable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+IBInspectable.m"; sourceTree = "<group>"; };
 		766FB35620C2E6E100EA4956 /* Chains_PlaceholderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Chains_PlaceholderView.m; sourceTree = "<group>"; };
 		766FB35720C2E6E100EA4956 /* UIScrollView+Placeholder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+Placeholder.h"; sourceTree = "<group>"; };
 		766FB35820C2E6E100EA4956 /* Chains_PlaceholderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Chains_PlaceholderView.h; sourceTree = "<group>"; };
@@ -829,6 +832,8 @@
 				76F2534620A55EF50086586C /* UINavigationController+Chains.m */,
 				76F2534720A55EF50086586C /* UIView+Chains.h */,
 				76F2534820A55EF50086586C /* UIView+Chains.m */,
+				762DD9022119D8C000107174 /* UIView+IBInspectable.h */,
+				762DD9032119D8C100107174 /* UIView+IBInspectable.m */,
 				76F2534920A55EF50086586C /* UIViewController+Chains.h */,
 				76F2534A20A55EF50086586C /* UIViewController+Chains.m */,
 			);
@@ -2003,6 +2008,7 @@
 				76F254CC20A56E6B0086586C /* AxcPlayerMenuMask.m in Sources */,
 				76F2548E20A56E6A0086586C /* UIImage+AxcLoadGIF.m in Sources */,
 				F761C17020D65A7900990AD1 /* BlurTestViewController.m in Sources */,
+				762DD9042119D8C100107174 /* UIView+IBInspectable.m in Sources */,
 				76F254C920A56E6B0086586C /* AxcPlayerControlMask.m in Sources */,
 				76F2548320A56E6A0086586C /* UIImageView+AxcFilter.m in Sources */,
 				F761C14620D64F6300990AD1 /* AboutTableViewController.m in Sources */,
